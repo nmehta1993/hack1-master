@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///C:/Users/SHYJU/eclipse-workspace/idgenerator/out.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></head><body><div class="container"><div class="row">
+  #foreach( $card in $cards )
+    <div class="col-md-6 text-center" style="height: 500px;">
+    <div style="width: 500px; border: 1px solid black; height: 100%">
+        <span style="background-color: red"><b>${card.eventName}</b></span>
+        <div>
+            <img src="${card.logoPath}" width="80">
+            <span><b>${card.hostName}</b></span>
+        </div>
+        <span style="background-color: red">${card.eventDuration}</span>
+        <div>
+            <img src="${card.personPhoto}" height="200">
+        </div>
+         <div>
+            <img src="${card.iconPath}" height="40">
+        </div>
+        <div>${card.personFullName},${card.personAffilliation}, ${card.personPlace}, ${card.personCountry}</div>
+        <div>Visiting Area: Ahmedabad</div>
+        <div>Allow to carry:  Phones, Wallets</div>
+        <div>Group Name: ${card.grouopName}</div>
+        <div> <img src="${card.barcodePath}" height="50"></div>
+    </div>
+</div>
+  #end
+</body></html>
+
